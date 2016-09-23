@@ -130,6 +130,6 @@ try:
 
         if logger.isEnabledFor(logging.DEBUG):
             logger.debug("Django found and fields and widgets loaded.")
-except ImportError:
+except ImportError as e:
     if logger.isEnabledFor(logging.INFO):
-        logger.info("Django not found.")
+        logger.info("Django not found for django-select2: %s." % e)
