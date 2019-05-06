@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 from __future__ import absolute_import, unicode_literals
 
+''' SILENCED
 from .models import KeyMap
 
 
@@ -27,3 +28,4 @@ class Client(object):
             return KeyMap.objects.get(key=key).value
         except KeyMap.DoesNotExist:
             return None
+'''
