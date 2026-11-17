@@ -1,6 +1,3 @@
-# -*- coding:utf-8 -*-
-from __future__ import absolute_import, unicode_literals
-
 from django import template
 
 from django_select2.media import (get_select2_css_libs,
@@ -11,11 +8,11 @@ register = template.Library()
 
 
 def link_tag(css_file):
-    return '<link href="{file}" rel="stylesheet">'.format(file=css_file)
+    return f'<link href="{css_file}" rel="stylesheet">'
 
 
 def script_tag(script_file):
-    return '<script type="text/javascript" src="{file}"></script>'.format(file=script_file)
+    return f'<script type="text/javascript" src="{script_file}"></script>'
 
 
 @register.simple_tag(name='import_django_select2_js')

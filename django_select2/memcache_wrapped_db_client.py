@@ -1,8 +1,4 @@
-# -*- coding:utf-8 -*-
-from __future__ import absolute_import, unicode_literals
-
-
-class Client(object):
+class Client:
     cache = None
     db = None
 

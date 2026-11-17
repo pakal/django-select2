@@ -1,4 +1,3 @@
-# -*- coding:utf-8 -*-
 """
 This is a Django_ integration of Select2_.
 
@@ -76,7 +75,6 @@ The view - `Select2View`, exposed here is meant to be used with 'Heavy' fields a
 .. _Read more: http://blog.applegrew.com/2012/08/django-select2/
 
 """
-from __future__ import absolute_import, unicode_literals
 
 import logging
 logger = logging.getLogger(__name__)
